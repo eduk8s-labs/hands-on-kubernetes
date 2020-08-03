@@ -2,18 +2,14 @@ Containers are a lightweight form of virtualization which can encapsulate one or
 
 Kubernetes is a platform for deploying applications in containers across multiple host systems and managing them. Kubernetes will schedule applications (workloads) to the different hosts systems (nodes), based on what resources are available.
 
-When you see discussion about deploying applications to a Kubernetes cluster, although applications are run in containers, you are more likely to hear mention of an application being deployed to a `pod`.
+When you see discussion about deploying applications to a Kubernetes cluster, although applications are run in containers, you are more likely to hear mention of an application being deployed to a pod.
 
-A `pod` in Kubernetes is an abstraction which represents a group of running containers, where the containers are to be managed and scaled as a unit.
+A pod in Kubernetes is an abstraction which represents a group of running containers, where the containers are to be managed and scaled as a unit. All containers in a pod will be scheduled to the same node.
 
-In most cases a `pod` will consist of only a single container. There are use cases for running multiple containers in one `pod`, but they are generally the exception rather than the rule.
+In most cases a pod will consist of only a single container. There are use cases for running multiple containers in one pod, but they are generally the exception rather than the rule.
 
-An instance of your application would therefore be run in one container of a `pod`.
+An instance of your application would therefore be run in one container of a pod.
 
-If you need to scale up the number of instances of your application, you would run more than one `pod` for that application.
+If you need to scale up the number of instances of your application, you would run more than one pod for that application. The pods for an application would be distributed across the nodes in a Kubernetes cluster.
 
-Scaling is not performed by adding more containers to the one `pod`.
-
-
-
-
+Scaling is not performed by adding more containers to the one pod.
