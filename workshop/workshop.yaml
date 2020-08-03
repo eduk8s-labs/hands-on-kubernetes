@@ -6,6 +6,7 @@ modules:
     - workshop-instructions
     - pods-and-containers/01-pods-and-containers
     - pods-and-containers/02-deploying-to-a-pod
+    - pods-and-containers/03-imperative-vs-declarative
     - workshop-intermission
     - labelling-resources/01-labelling-resources
     - workshop-summary
