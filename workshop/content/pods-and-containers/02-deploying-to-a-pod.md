@@ -19,7 +19,7 @@ NAME   READY   STATUS    RESTARTS   AGE
 blog   1/1     Running   0          5s
 ```
 
-Additional fields providing the IP address for the pod, and the name of the node on which the pod is running can be viewed by running:
+Additional fields including the IP address for the pod, and the name of the node on which the pod is running, can be viewed by running:
 
 ```execute
 kubectl get pod blog -o wide
@@ -32,8 +32,20 @@ NAME   READY   STATUS    RESTARTS   AGE   IP            NODE       NOMINATED NOD
 blog   1/1     Running   0          30s   172.17.0.10   minikube   <none>           <none>
 ```
 
-For even more detailed information about the pod, you can run:
+To extract just the IP address for the pod, you can run:
 
+{% raw %}
 ```execute
-kubectl describe pod blog
+kubectl get pod blog -o template --template {{.status.hostIP}}
 ```
+{% endraw %}
+
+This IP address is only accessible from within the Kubernetes cluster.
+
+As this workshop environment is running inside of the same Kubernetes cluster as the pod is deployed, you can verify access to the application using the IP address by running:
+
+{% raw %}
+```execute
+curl http://`kubectl get pod blog -o template --template {{.status.hostIP}}`
+```
+{% endraw %}
