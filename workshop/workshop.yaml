@@ -3,6 +3,6 @@ name: Hands on Kubernetes
 modules:
     activate:
     - workshop-overview
-    - setup-environment
-    - exercises/01-sample-content
+    - workshop-instructions
+    - pods-and-containers/01-sample-content
     - workshop-summary

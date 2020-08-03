@@ -1,1 +1,3 @@
-This is the last page of the workshop. Include in this page a summary of the workshop and any links to resources relevant to the workshop. This ensures anyone doing the workshop has material they can research later to learn more.
+This is the end of the workshop. For more details on the workshops and how you can deploy them yourself, see:
+
+* https://github.com/eduk8s-labs/hands-on-kubernetes

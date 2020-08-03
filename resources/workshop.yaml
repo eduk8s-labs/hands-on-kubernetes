@@ -4,7 +4,7 @@ metadata:
   name: lab-hands-on-kubernetes
 spec:
   title: Hands on Kubernetes
-  description: A collection of labs which introduces Kubernetes concepts
+  description: A collection of workshops which introduces Kubernetes concepts
   vendor: eduk8s.io
   difficulty: beginner
   url: https://github.com/eduk8s-labs/hands-on-kubernetes

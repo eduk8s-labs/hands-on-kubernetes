@@ -1,4 +1,4 @@
 Hands on Kubernetes
 ===================
 
-A collection of labs which introduces Kubernetes concepts.
+A collection of workshops which introduces Kubernetes concepts.
