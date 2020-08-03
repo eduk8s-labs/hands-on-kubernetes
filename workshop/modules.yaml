@@ -8,6 +8,8 @@ modules:
 
     pods-and-containers/01-pods-and-containers:
         name: Pods and Containers
+    pods-and-containers/02-deploying-to-a-pod:
+        name: Deploying to a Pod
 
     labelling-resources/01-labelling-resources:
         name: Labelling Resources
