@@ -6,7 +6,7 @@ To see this process in action run the command:
 kubectl get pods -w
 ```
 
-This sets up a watcher on the state of pods in the namespace.
+This sets up a watch on the state of pods in the namespace.
 
 In the other terminal now run:
 
@@ -14,4 +14,17 @@ In the other terminal now run:
 kubectl exec blog -- kill 1
 ```
 
-Although a pod ensures the application keeps running, it doesn't by provide any assistance when it comes to scaling up an application to multiple instances. To do this, you would need to create a new pod by way of a separate pod rsource definition, with different name.
+You should see output from the watch similar to:
+
+```
+NAME   READY   STATUS      RESTARTS   AGE
+blog   1/1     Running     0          15s
+blog   0/1     Completed   0          20s
+blog   1/1     Running     1          25s
+```
+
+This shows how the application container exited (completed), but that it was then replaced with the status for the pod returning to running.
+
+Although a pod ensures the application will keep running, it doesn't provide any assistance when it comes to scaling up an application to multiple instances. To do this, you would need to create a new pod by way of a separate pod resource definition, with a different name.
+
+For this reason, rather than directly deploying applications using a `Pod` resource definition, it is better to use higher level abstractions such as a `Deployment` or `StatefulSet` resource.
