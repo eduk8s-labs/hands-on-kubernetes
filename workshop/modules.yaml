@@ -5,8 +5,17 @@ modules:
     workshop-instructions:
         name: Workshop Instructions
         exit_sign: Start Workshop
+
     pods-and-containers/01-pods-and-containers:
         name: Pods and Containers
+
+    labelling-resources/01-labelling-resources:
+        name: Labelling Resources
+
     workshop-summary:
         name: Workshop Summary
         exit_sign: Finish Workshop
+
+    workshop-intermission:
+        name: Workshop Intermission
+        exit_sign: Next Workshop
