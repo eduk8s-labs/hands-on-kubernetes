@@ -10,8 +10,8 @@ modules:
         name: Pods and Containers
     pods-and-containers/02-deploying-to-a-pod:
         name: Deploying to a Pod
-    pods-and-containers/03-imperative-vs-declarative:
-        name: Imperative vs Declarative
+    pods-and-containers/03-resource-definition:
+        name: Resource Definition
 
     labelling-resources/01-labelling-resources:
         name: Labelling Resources
