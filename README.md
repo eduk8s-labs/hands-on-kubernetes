@@ -1,4 +1,4 @@
-LAB - Markdown Sample
-=====================
+Hands on Kubernetes
+===================
 
-Sample workshop content using Markdown formatting for pages.
+A collection of labs which introduces Kubernetes concepts.
