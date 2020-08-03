@@ -8,4 +8,4 @@ Did you type the command in yourself? If you did, click on the command instead a
 
 Although ``kubectl`` will be used to execute commands against the Kubernetes cluster, the Kubernetes dashboard is also provided for exploring the cluster. This can be found by clicking on the **Console** tab.
 
-If you want to end the workshop early, you can select **Restart Workshop** from the drop down menu on the right hand side.
+If you want to end the workshop early, you can select **Restart Session** from the drop down menu on the right hand side.
