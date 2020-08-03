@@ -19,6 +19,8 @@ NAME   READY   STATUS    RESTARTS   AGE
 blog   1/1     Running   0          5s
 ```
 
+If this is the first time the container image has been used in a deployment to a node in the Kubernetes cluster, it may take longer to start up the pod as it will be necessary to pull the container image down from the remote image registry. During this time the status for the pod will show `ContainerCreating`. Once the deployment has completed, the status will show as `Running`.
+
 Additional fields including the IP address for the pod, and the name of the node on which the pod is running, can be viewed by running:
 
 ```execute
@@ -36,7 +38,7 @@ To extract just the IP address for the pod, you can run:
 
 {% raw %}
 ```execute
-kubectl get pod blog -o template --template {{.status.hostIP}}
+kubectl get pod blog -o template --template {{.status.podIP}}
 ```
 {% endraw %}
 
@@ -46,6 +48,6 @@ As this workshop environment is running inside of the same Kubernetes cluster as
 
 {% raw %}
 ```execute
-curl http://`kubectl get pod blog -o template --template {{.status.hostIP}}`
+curl http://`kubectl get pod blog -o template --template {{.status.podIP}}`:8080
 ```
 {% endraw %}
