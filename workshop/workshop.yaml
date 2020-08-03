@@ -4,5 +4,5 @@ modules:
     activate:
     - workshop-overview
     - workshop-instructions
-    - pods-and-containers/01-sample-content
+    - pods-and-containers/01-pods-vs-containers
     - workshop-summary

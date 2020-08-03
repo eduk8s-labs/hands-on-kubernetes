@@ -5,8 +5,8 @@ modules:
     workshop-instructions:
         name: Workshop Instructions
         exit_sign: Start Workshop
-    pods-and-containers/01-sample-content:
-        name: Sample Content
+    pods-and-containers/01-pods-vs-containers:
+        name: Pods vs Containers
     workshop-summary:
         name: Workshop Summary
         exit_sign: Finish Workshop
