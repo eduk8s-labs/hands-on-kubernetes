@@ -6,11 +6,11 @@ kubectl describe pod blog
 
 This combines information from a couple of sources.
 
-The primary source of information is the resource definition in the Kubernetes cluster created by the `kubectl run` command.
+The primary source of information is the resource definition in the Kubernetes cluster originally created by running the `kubectl run` command.
 
 A second source of information is the list of events recorded by the Kubernetes cluster related to this workload.
 
-To view the resource definition for the pod, you can run:
+To view the raw resource definition for the pod, you can run:
 
 ```execute
 kubectl get pod blog -o yaml
@@ -45,5 +45,3 @@ spec:
   restartPolicy: Always
 status: {}
 ```
-
-Instead of using the `kubectl run` command, you could instead have started with this resource definition and applied it to the cluster to create the deployment.

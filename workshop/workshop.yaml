@@ -7,6 +7,8 @@ modules:
     - pods-and-containers/01-pods-and-containers
     - pods-and-containers/02-deploying-to-a-pod
     - pods-and-containers/03-resource-definition
+    - pods-and-containers/04-resource-creation
+    - pods-and-containers/05-managing-the-pods
     - workshop-intermission
     - labelling-resources/01-labelling-resources
     - workshop-summary

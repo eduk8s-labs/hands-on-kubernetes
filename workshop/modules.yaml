@@ -12,6 +12,10 @@ modules:
         name: Deploying to a Pod
     pods-and-containers/03-resource-definition:
         name: Resource Definition
+    pods-and-containers/04-resource-creation:
+        name: Resource Creation
+    pods-and-containers/05-managing-the-pods:
+        name: Managing the Pods
 
     labelling-resources/01-labelling-resources:
         name: Labelling Resources

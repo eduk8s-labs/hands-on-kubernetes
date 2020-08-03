@@ -21,7 +21,7 @@ blog   1/1     Running   0          5s
 
 If this is the first time the container image has been used in a deployment to a node in the Kubernetes cluster, it may take longer to start up the pod as it will be necessary to pull the container image down from the remote image registry. During this time the status for the pod will show `ContainerCreating`. Once the deployment has completed, the status will show as `Running`.
 
-Additional fields including the IP address for the pod, and the name of the node on which the pod is running, can be viewed by running:
+Additional fields including the IP address for the pod, and the name of the node on which the pod is running, can be viewed by running `kubectl get pod` with the `-o wide` option:
 
 ```execute
 kubectl get pod blog -o wide
@@ -34,7 +34,7 @@ NAME   READY   STATUS    RESTARTS   AGE   IP            NODE       NOMINATED NOD
 blog   1/1     Running   0          30s   172.17.0.10   minikube   <none>           <none>
 ```
 
-To extract just the IP address for the pod, you can run:
+To extract just the IP address for the pod, you can specify an output template to `kubectl get`:
 
 {% raw %}
 ```execute
@@ -44,7 +44,7 @@ kubectl get pod blog -o template --template {{.status.podIP}}
 
 This IP address is only accessible from within the Kubernetes cluster.
 
-As this workshop environment is running inside of the same Kubernetes cluster as the pod is deployed, you can verify access to the application using the IP address by running:
+As this workshop environment is though running inside of the same Kubernetes cluster as the pod is deployed, you can verify access to the application using the IP address by running:
 
 {% raw %}
 ```execute
