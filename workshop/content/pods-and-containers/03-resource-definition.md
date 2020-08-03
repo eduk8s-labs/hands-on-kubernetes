@@ -24,7 +24,7 @@ To see what the original resource definition was when it was being created, you 
 kubectl run blog --generator=run-pod/v1 --image=quay.io/eduk8s-labs/app-k8s-fundamentals-frontend:latest --port=8080 -o yaml --dry-run
 ```
 
-The type for the resource is `Pod`` and the output should be similar to:
+The type for the resource is `Pod` and the output should be similar to:
 
 ```
 apiVersion: v1

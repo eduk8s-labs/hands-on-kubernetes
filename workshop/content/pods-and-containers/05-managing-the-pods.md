@@ -42,3 +42,5 @@ Interrupt the watch command to stop it:
 Although a pod ensures the application will keep running, it doesn't provide any assistance when it comes to scaling up an application to multiple instances. To do this, you would need to create a new pod by way of a separate pod resource definition, with a different name.
 
 For this reason, rather than directly deploying applications using a `Pod` resource definition, it is better to use higher level abstractions such as a `Deployment` or `StatefulSet` resource.
+
+Regardless of the method for deploying the application, each pod will have its own IP address. To be able to load balance inbound requests across all the pods running instances of the applications, you will need to also create a `Service` resource.
