@@ -18,4 +18,4 @@ modules:
 
     workshop-intermission:
         name: Workshop Intermission
-        exit_sign: Next Workshop
+        exit_sign: Next Topic
