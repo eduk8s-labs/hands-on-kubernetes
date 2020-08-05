@@ -1,10 +1,8 @@
-name: Pods and Containers
-
 modules:
     activate:
-    - workshop-overview
-    - exercises/01-deploying-to-a-pod
-    - exercises/02-resource-definition
-    - exercises/03-resource-creation
-    - exercises/04-managing-the-pods
-    - workshop-summary
+    - 01-pods-and-containers
+    - 02-deploying-to-a-pod
+    - 03-resource-definition
+    - 04-resource-creation
+    - 05-managing-the-pods
+    - 99-additional-resources

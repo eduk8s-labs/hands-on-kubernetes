@@ -3,3 +3,4 @@ kind: Kustomization
 
 resources:
 - lab-pods-and-containers/resources/workshop.yaml
+- resources/training-portal.yaml
