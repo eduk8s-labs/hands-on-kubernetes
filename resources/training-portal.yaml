@@ -1,10 +1,10 @@
 apiVersion: training.eduk8s.io/v1alpha1
 kind: TrainingPortal
 metadata:
-  name: lab-hands-on-kubernetes
+  name: hands-on-kubernetes
 spec:
   workshops:
-  - name: lab-hands-on-kubernetes
+  - name: lab-pods-and-containers
     capacity: 1
-    expires: 60m
+    expires: 20m
     orphaned: 5m

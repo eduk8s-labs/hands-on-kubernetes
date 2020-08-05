@@ -1,15 +1,15 @@
 apiVersion: training.eduk8s.io/v1alpha2
 kind: Workshop
 metadata:
-  name: lab-hands-on-kubernetes
+  name: lab-pods-and-containers
 spec:
-  title: Hands on Kubernetes
-  description: A collection of workshops which introduces Kubernetes concepts
+  title: Pods and Containers
+  description: Introduction to pods and containers
   vendor: eduk8s.io
   difficulty: beginner
   url: https://github.com/eduk8s-labs/hands-on-kubernetes
   content:
-    files: github.com/eduk8s-labs/hands-on-kubernetes
+    files: github.com/eduk8s-labs/hands-on-kubernetes/lab-pods-and-containers
   session:
     budget: medium
     applications:
