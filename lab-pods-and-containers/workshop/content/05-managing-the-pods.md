@@ -14,7 +14,7 @@ In the other terminal now run:
 kubectl exec blog -- kill 1
 ```
 
-This command will result in the UNIX command ``kill 1`` being run inside of the container, causing the initial process run in the container being stopped, resulting in the container as a whole being shutdown.
+This command will result in the UNIX command ``kill 1`` being run inside of the container, causing the initial process run in the container to be stopped, resulting in the container as a whole being shutdown.
 
 You should see output from the watch similar to:
 
@@ -43,6 +43,6 @@ Interrupt the watch command to stop it:
 
 Although a pod ensures the application will keep running, it doesn't provide any assistance when it comes to scaling up an application to multiple instances. To do this, you would need to create a new pod by way of a separate pod resource definition, with a different name.
 
-For this reason, rather than directly deploying applications using a `Pod` resource definition, it is better to use higher level abstractions such as a `Deployment` or `StatefulSet` resource.
+For this reason, rather than directly deploying applications using a `Pod` resource definition, it is better to use higher level abstractions such as a `Deployment` or `StatefulSet` resource. These are designed to be able to manage multiple pods and scale up the number as necessary.
 
 Regardless of the method for deploying the application, each pod will have its own IP address. To be able to load balance inbound requests across all the pods running instances of the applications, you will need to also create a `Service` resource.
