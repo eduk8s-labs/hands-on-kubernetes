@@ -10,5 +10,5 @@ modules:
     05-managing-the-pods:
         name: Managing the Pods
     99-additional-resources:
-        name: Workshop Summary
+        name: Additional Resources
         exit_sign: Finish Workshop

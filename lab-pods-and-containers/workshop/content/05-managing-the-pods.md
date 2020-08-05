@@ -14,6 +14,8 @@ In the other terminal now run:
 kubectl exec blog -- kill 1
 ```
 
+This command will result in the UNIX command ``kill 1`` being run inside of the container, causing the initial process run in the container being stopped, resulting in the container as a whole being shutdown.
+
 You should see output from the watch similar to:
 
 ```

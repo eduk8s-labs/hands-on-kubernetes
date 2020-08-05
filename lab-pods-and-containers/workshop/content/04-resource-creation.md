@@ -29,3 +29,5 @@ Verify the pod was once again created by running:
 ```execute
 kubectl get pod blog
 ```
+
+Although one can use ``kubectl run`` to create a pod in this instance, it is regarded as best practice to use a file to store the resource definition and apply it to the cluster.
