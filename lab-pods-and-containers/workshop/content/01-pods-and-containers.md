@@ -13,3 +13,5 @@ An instance of your application would therefore be run in one container of a pod
 If you need to scale up the number of instances of your application, you would run more than one pod for that application. The pods for an application would be distributed across the nodes in a Kubernetes cluster.
 
 Scaling is not performed by adding more containers to the one pod.
+
+In the rest of this workshop you will see how you can deploy an application in a pod in Kubernetes.
